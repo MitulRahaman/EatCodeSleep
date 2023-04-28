@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rosybrown;
+}
+.container .item {
+    font-size: 6rem;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s;
+}
+.container .item.show{
+    transform: translate(-50%, -50%) scale(1);
+}
